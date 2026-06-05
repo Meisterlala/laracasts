@@ -1,16 +1,9 @@
-FROM php:apache
+FROM php:8.3-apache
 
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
-
-# Update package list
-RUN apt-get update
-
-# Install Git and GnuPG
-RUN apt-get install -y git gnupg2
-
-# Install PostgreSQL client and its PHP extensions
-RUN apt-get install -y libpq-dev \
-    && docker-php-ext-install pdo pdo_pgsql
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl libpq-dev \
+    && docker-php-ext-install pdo_pgsql \
+    && a2enmod rewrite \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY ./www /var/www/html/

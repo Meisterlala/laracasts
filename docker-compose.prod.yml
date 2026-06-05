@@ -1,12 +1,14 @@
 services:
   app:
-    env_file: ".env"
+    image: ghcr.io/meisterlala/laracasts:latest
+    build: !reset null
+    env_file: !override ".env"
     ports: !reset []
     expose:
       - 80
     volumes: !reset ""
   db:
-    env_file: ".env"
+    env_file: !override ".env"
   pgadmin: !reset ""
 
 networks:

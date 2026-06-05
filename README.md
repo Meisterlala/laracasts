@@ -1,5 +1,5 @@
-# PHP Demo Website
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/1kdio.svg)](https://php-demo.nekofans.net/) [php-demo.nekofans.net](https://php-demo.nekofans.net/)
+# PHP Laracasts Demo Website
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/1kdio.svg)](https://php-laracast.meisterlala.dev/) [php-laracast.meisterlala.dev](https://php-laracast.meisterlala.dev/)
 
 
 This project is part of my journey in mastering PHP, web development, and database management, inspired by my coursework from the [Laracasts PHP Path](https://laracasts.com/series). It showcases a collection of projects that highlight my skills in designing responsive, user-friendly websites, integrating back-end functionality, and managing data with MySQL.
@@ -11,8 +11,9 @@ By exploring this demo, you'll gain insight into how I approach full-stack devel
 - **Database Integration:** Projects include examples of CRUD (Create, Read, Update, Delete) operations with Postgress databases.
 - **Deployment-Ready:** The project is easily deployable with Docker and can be run seamlessly in any development environment using GitHub Codespaces.
 
-## Check it out: [https://php-demo.nekofans.net/](https://php-demo.nekofans.net/)
-Or try the [backup link](https://php-projects.netlify.app) (static site without PHP support)
+## Check it out: [https://php-laracast.meisterlala.dev/](https://php-laracast.meisterlala.dev/)
+
+This site needs PHP and PostgreSQL at runtime, so it is deployed as a Docker container. Static hosts can only serve the landing page and cannot run the PHP routes or database-backed demos.
 
 ## Running the Website Locally
 
